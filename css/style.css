@@ -4,7 +4,24 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    height: 90vh
+    height: 90vh;
+    background-color: #333;
+}
+
+.container {
+    background-color: #e3e3e3;
+    color: #333;
+    box-shadow: 1px 1px #e3e3e3;
+    height: 20vh;
+    width: 60vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.student-name {
+    cursor: pointer;
 }
 
 .say-hi {

@@ -9,13 +9,23 @@
 </head>
 <body>
     <div class="name">
-        <h1 onclick="onClickName()">Simon Ron Ifergan</h1>
-        <h2 class="say-hi"></h2>
+        <div class="container">
+            <h1 class="student-name" onclick="onClickName()">Simon Ron Ifergan</h1>
+            <h2 class="say-hi"></h2>
+        </div>
     </div>
 
     <script>
+        var clicked = false;
         function onClickName() {
-            document.querySelector('.say-hi').innerHTML = 'Hello CodingAcademy Crew';
+            if (!clicked) {
+                document.querySelector('.say-hi').innerHTML = 'Hello CodingAcademy Crew';
+                clicked = !clicked;
+            }
+            else {
+                document.querySelector('.say-hi').innerHTML = '';
+                clicked = !clicked;
+            } 
         }
     </script>
 </body>
