@@ -9,7 +9,14 @@
 </head>
 <body>
     <div class="name">
-        <h1>Simon Ron Ifergan</h1>
+        <h1 onclick="onClickName()">Simon Ron Ifergan</h1>
+        <h2 class="say-hi"></h2>
     </div>
+
+    <script>
+        function onClickName() {
+            document.querySelector('.say-hi').innerHTML = 'Hello CodingAcademy Crew';
+        }
+    </script>
 </body>
 </html>
